@@ -1,5 +1,5 @@
 ---
-name: bfcm-readiness
+name: bfcm-readiness-temp
 description: Audit WooCommerce stores for Black Friday and Cyber Monday readiness, publish a report, then remediate only what a human approves.
 version: 1.0.0
 homepage: https://www.cloudways.com/en/managed-ai-agents.php
