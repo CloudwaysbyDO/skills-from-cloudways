@@ -4,7 +4,7 @@
     "bfcm-readiness": {
       "files": {
         "README.md": "sha256:e417fa5955964e1e6e3d16b6b74a74c5c59ac5a461401c669b1f2b232495c951",
-        "SKILL.md": "sha256:95885198d51eb163e8c592a97c6246f14bf2600f6fff401868746bb738cfc1fd",
+        "SKILL.md": "sha256:4622f36a553502fb0b2c435763ad5a6f0b10200ed1d48743374f98735d3a2cb2",
         "install.sh": "sha256:d975ad82476462709b613e85af225e2e41a068d15d4495df8e6901a02f9c9d43",
         "references/audit-steps.md": "sha256:eae9e88db1b5d6ebf5fef024ef82bb23e189327251350221de02d53201ba67b3",
         "references/data-sources.md": "sha256:4c01aef818a6f417a6f73366fac872d9e4e831124871467dc0232e424d781481",
