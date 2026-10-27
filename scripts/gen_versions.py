@@ -12,6 +12,9 @@ from the existing versions.json.
 --base is used by CI to compare against what is already released (main). Without it, a PR that
 bumps twice leaks the unreleased version into history.
 
+When a skill directory is deleted, its entry stays in versions.json with "removed": true and its
+last file hashes. Servers use those hashes to delete only copies the customer has not edited.
+
 Version and name are read from each skill's SKILL.md frontmatter, which stays the source of truth.
 Standard library only. Python 3.7 or later.
 """
@@ -124,6 +127,13 @@ def build(base=None) -> dict:
                 if history:
                     entry["history"] = history[:HISTORY_LIMIT]
             skills[name] = entry
+    for name, old in existing.items():
+        if name not in skills:
+            gone = {k: old[k] for k in ("scope", "version", "path", "files")}
+            gone["removed"] = True
+            if old.get("history"):
+                gone["history"] = old["history"]
+            skills[name] = gone
     return {"schema": 1, "skills": skills}
 
 
