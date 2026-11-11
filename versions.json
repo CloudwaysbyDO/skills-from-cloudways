@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "skills": {
-    "bfcm-readiness": {
+    "cloudways-bfcm-readiness": {
       "files": {
         "README.md": "sha256:e417fa5955964e1e6e3d16b6b74a74c5c59ac5a461401c669b1f2b232495c951",
-        "SKILL.md": "sha256:95885198d51eb163e8c592a97c6246f14bf2600f6fff401868746bb738cfc1fd",
+        "SKILL.md": "sha256:dbffdd8f4db83f52c77c4cf9f1948d179dcfc1336e2d269ef91101236516f295",
         "install.sh": "sha256:d975ad82476462709b613e85af225e2e41a068d15d4495df8e6901a02f9c9d43",
         "references/audit-steps.md": "sha256:eae9e88db1b5d6ebf5fef024ef82bb23e189327251350221de02d53201ba67b3",
         "references/data-sources.md": "sha256:4c01aef818a6f417a6f73366fac872d9e4e831124871467dc0232e424d781481",
@@ -17,7 +17,7 @@
         "scripts/freeze_window.mjs": "sha256:86144993f4334b6c9150050471f99b101b8e06b1fbdbcc8b2027257d297f5c0f",
         "scripts/freeze_window.py": "sha256:e28cf547187bb1410828c4be6b6493b4e81f9d37b9ea92ac0fec71d1bd3df8db"
       },
-      "path": "skills/portable/bfcm-readiness",
+      "path": "skills/portable/cloudways-bfcm-readiness",
       "scope": "portable",
       "version": "1.0.0"
     },

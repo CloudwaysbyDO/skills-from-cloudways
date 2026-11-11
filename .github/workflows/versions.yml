@@ -3,7 +3,7 @@ name: versions
 # Regenerates versions.json on every pull request, commits it to the PR branch if it changed. 
 
 on:
-  pull_request:
+  #pull_request:
 
 concurrency:
   group: versions-${{ github.event.pull_request.number }}
