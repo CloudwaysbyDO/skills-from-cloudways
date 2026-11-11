@@ -18,6 +18,27 @@
         "scripts/freeze_window.py": "sha256:e28cf547187bb1410828c4be6b6493b4e81f9d37b9ea92ac0fec71d1bd3df8db"
       },
       "path": "skills/portable/bfcm-readiness",
+      "removed": true,
+      "scope": "portable",
+      "version": "1.0.0"
+    },
+    "cloudways-bfcm-readiness": {
+      "files": {
+        "README.md": "sha256:e417fa5955964e1e6e3d16b6b74a74c5c59ac5a461401c669b1f2b232495c951",
+        "SKILL.md": "sha256:dbffdd8f4db83f52c77c4cf9f1948d179dcfc1336e2d269ef91101236516f295",
+        "install.sh": "sha256:d975ad82476462709b613e85af225e2e41a068d15d4495df8e6901a02f9c9d43",
+        "references/audit-steps.md": "sha256:eae9e88db1b5d6ebf5fef024ef82bb23e189327251350221de02d53201ba67b3",
+        "references/data-sources.md": "sha256:4c01aef818a6f417a6f73366fac872d9e4e831124871467dc0232e424d781481",
+        "references/deliverable.md": "sha256:f379e7c032bf6606e079b58dee7ef2b4fec3f99adf90265087d6ac00a99f1eef",
+        "references/failure-index.md": "sha256:3fed5d88fadd69abb827e81d0be5dcc46b299ff70617ededdb7eeaeaff63dd30",
+        "references/freeze-window.md": "sha256:552dffd596e237728774fca92fb6777888fb117095575b570d8d110a22b69d9a",
+        "references/remediation.md": "sha256:bebfbe3bc3e3363d98133734c98b13eb3fc908088fff0701e20b326a7d72f6ab",
+        "references/report-template.md": "sha256:46a48588fd622b83f312f9c2166e8e3c62332b95f26a062fa966705b7ef7140b",
+        "references/thresholds.md": "sha256:18dc6602db7ead6a70c37e4aeb214427fc9b3f64ffbd66c5d6cd9b7c218661e0",
+        "scripts/freeze_window.mjs": "sha256:86144993f4334b6c9150050471f99b101b8e06b1fbdbcc8b2027257d297f5c0f",
+        "scripts/freeze_window.py": "sha256:e28cf547187bb1410828c4be6b6493b4e81f9d37b9ea92ac0fec71d1bd3df8db"
+      },
+      "path": "skills/portable/cloudways-bfcm-readiness",
       "scope": "portable",
       "version": "1.0.0"
     },
