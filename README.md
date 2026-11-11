@@ -28,7 +28,9 @@ The directory name matches `name:` in the `SKILL.md` frontmatter.
 
 | Skill | Scope | Purpose |
 | --- | --- | --- |
-| [bfcm-readiness](skills/portable/bfcm-readiness/) | portable | Audit WooCommerce stores for Black Friday and Cyber Monday, report, remediate with human approval |
+| [cloudways-bfcm-readiness](skills/portable/cloudways-bfcm-readiness/) | portable | Audit WooCommerce stores for Black Friday and Cyber Monday, report, remediate with human approval |
+| [cloudways-fleet-performance-checker](skills/portable/cloudways-fleet-performance-checker/) | portable | Full performance audit of every app on a Cloudways account via the Cloudways MCP |
+| [cloudways-vulnerability-guardian](skills/portable/cloudways-vulnerability-guardian/) | portable | Scan Cloudways servers for Critical vulnerabilities, back up, and patch only after exact-token human confirmation |
 
 ## Adding a skill
 
