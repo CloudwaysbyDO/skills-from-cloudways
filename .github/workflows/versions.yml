@@ -1,0 +1,51 @@
+name: versions
+
+# Regenerates versions.json on every pull request, commits it to the PR branch if it changed. 
+
+on:
+  pull_request:
+
+concurrency:
+  group: versions-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  versions:
+    runs-on: ubuntu-latest
+    env:
+      BASE_REF: ${{ github.base_ref }}
+      HEAD_REF: ${{ github.event.pull_request.head.ref }}
+      HAS_BOT_TOKEN: ${{ secrets.VERSIONS_BOT_TOKEN != '' }}
+    steps:
+      - name: Refuse fork PRs
+        if: github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          echo "::error::Fork PRs cannot be updated by the bot. Run python3 scripts/gen_versions.py --base origin/$BASE_REF and push versions.json."
+          exit 1
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          token: ${{ secrets.VERSIONS_BOT_TOKEN || github.token }}
+
+      - name: Regenerate versions.json
+        run: python3 scripts/gen_versions.py --base "origin/$BASE_REF"
+
+      - name: Commit versions.json if it changed
+        run: |
+          if [ -z "$(git status --porcelain -- versions.json)" ]; then
+            echo "versions.json is already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add versions.json
+          git commit -m "chore: update versions.json"
+          git push origin "HEAD:$HEAD_REF"
+
+      - name: Verify versions.json is up to date
+        run: python3 scripts/gen_versions.py --check --base "origin/$BASE_REF"
