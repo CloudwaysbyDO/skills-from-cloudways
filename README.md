@@ -26,11 +26,14 @@ The directory name matches `name:` in the `SKILL.md` frontmatter.
 
 ## Skills
 
-| Skill | Scope | Purpose |
-| --- | --- | --- |
-| [cloudways-bfcm-readiness](skills/portable/cloudways-bfcm-readiness/) | portable | Audit WooCommerce stores for Black Friday and Cyber Monday, report, remediate with human approval |
-| [cloudways-fleet-performance-checker](skills/portable/cloudways-fleet-performance-checker/) | portable | Full performance audit of every app on a Cloudways account via the Cloudways MCP |
-| [cloudways-vulnerability-guardian](skills/portable/cloudways-vulnerability-guardian/) | portable | Scan Cloudways servers for Critical vulnerabilities, back up, and patch only after exact-token human confirmation |
+**[cloudways-bfcm-readiness](skills/portable/cloudways-bfcm-readiness/)** (portable)
+BFCM Readiness audits WooCommerce stores ahead of Black Friday and Cyber Monday, giving each a READY to BLOCKED verdict with severity-ranked issues and fix by dates tied to the freeze window.
+
+**[cloudways-fleet-performance-checker](skills/portable/cloudways-fleet-performance-checker/)** (portable)
+Fleet Performance Checker audits every WordPress or Magento app on a Cloudways account for server, PHP, database, security and PageSpeed issues, then delivers a prioritised action plan.
+
+**[cloudways-vulnerability-guardian](skills/portable/cloudways-vulnerability-guardian/)** (portable)
+Vulnerability Guardian monitors for critical PHP and WordPress CVEs, checks patch safety across every app on the server, then backs up and updates PHP only after you type an exact confirmation, with health checks and restore on failure.
 
 ## Adding a skill
 
