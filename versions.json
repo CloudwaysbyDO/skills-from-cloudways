@@ -1,6 +1,24 @@
 {
   "schema": 1,
   "skills": {
+    "cloudways-agency-prospect-outreach": {
+      "files": {
+        "README.md": "sha256:04b475edecc22e2d83fe73ba0be6a7a10f3e53a8efb6869bf3b21a7a21a0f4cd",
+        "SKILL.md": "sha256:74a0dede9d89635085e2f1de74ab6f97b2e238eed19e116d5f700a856f9f5c93",
+        "references/audit-checklist.md": "sha256:6a02cca333f2fee957adab2404450ba7aeed1655719a3c67c8710420189bb45b",
+        "references/email-channels.md": "sha256:a49cee4fb67e7c35b945fdcb6214cd14486aca956e534976a2bc2ce501adbcd7",
+        "references/email-guidelines.md": "sha256:25786a5529283b1ed079295ed68b1cfe2a105a5897e894d289db41b3f54804b6",
+        "references/scoring.md": "sha256:6effb4c99de3492a8b28eb9552ba5209ebc306c15d510250270bb266db8a3da7",
+        "references/search-and-audit-recipes.md": "sha256:b9a4499dfdb03a8b855bd9eefe6234ba4c9c67f90b1953ed509aa3130d246ae4",
+        "references/setup.md": "sha256:17400ee4ef5a1ebee1badab2d2724f067c7e15b6f2e28aae9247c82ad13de1af",
+        "scripts/check_setup.py": "sha256:c9cc54401d76beacf739ce86e47fdd47d8ae2f48b6fc347e90d73b5a5e66c0d6",
+        "scripts/score_prospect.py": "sha256:8180dd83812a4093ca127c9052c4bb1496d9a3a3581d31299eacefd1ab43f047",
+        "scripts/site_audit.py": "sha256:3bb92585dcc4beae6ff6aa6244b75ee906f51d870a478ff6f6bf9e69924e9846"
+      },
+      "path": "skills/portable/cloudways-agency-prospect-outreach",
+      "scope": "portable",
+      "version": "1.0.0"
+    },
     "cloudways-bfcm-readiness": {
       "files": {
         "README.md": "sha256:e417fa5955964e1e6e3d16b6b74a74c5c59ac5a461401c669b1f2b232495c951",
@@ -28,6 +46,22 @@
       "path": "skills/portable/cloudways-fleet-performance-checker",
       "scope": "portable",
       "version": "0.2.0"
+    },
+    "cloudways-lovable-velocity-migrator": {
+      "files": {
+        "SKILL.md": "sha256:2b604833009a624680ffe374eccd9ea5f5a9883ceb9c4307a1f035310b555224"
+      },
+      "path": "skills/portable/cloudways-lovable-velocity-migrator",
+      "scope": "portable",
+      "version": "1.4.0"
+    },
+    "cloudways-prompt-injection-hardening": {
+      "files": {
+        "SKILL.md": "sha256:aa24c30ff7b7ce1fe0904889a1fa54f36a5eb4779790bfb34785e3891a2fb65b"
+      },
+      "path": "skills/portable/cloudways-prompt-injection-hardening",
+      "scope": "portable",
+      "version": "1.0.0"
     },
     "cloudways-vulnerability-guardian": {
       "files": {
